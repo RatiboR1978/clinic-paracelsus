@@ -1,0 +1,52 @@
+.attendance {
+  background-color: #f6f6f6;
+}
+
+.attendance__title {
+  text-align: center;
+  font-size: 36px;
+  color: #4c4c4c;
+  padding-top: 48px;
+  margin-bottom: 52px;
+}
+
+.attendance__wrap {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  article {
+    width: 260px;
+    height: 248px;
+    padding-top: 23px;
+    text-align: center;
+    background-color: #fff;
+    margin-bottom: 44px;
+    img {
+      margin: 0 auto;
+    }
+    h3 {
+      font-size: 19px;
+      margin: 0;
+      color: #4c4c4c;
+    }
+    p {
+      font-size: 16px;
+      padding: 10px 10px;
+      margin: 0;
+    }
+    a {
+      font-size: 16px;
+      color: #00b6ff;
+      border-bottom:1px solid;
+    }
+  }
+}
+
+.attendance__title-item1 {
+  padding: 21px 10px;
+}
+
+.attendance__title-item2 {
+  padding: 10px 16px;
+}
+

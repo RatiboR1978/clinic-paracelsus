@@ -1,0 +1,35 @@
+.info {
+  background-color: #50b09b;
+}
+
+.info__wrap {
+  display: flex;
+  justify-content: space-between;
+  color: white;
+  h2 {
+    font-size: 36px;
+    margin-top: 46px;
+    margin-bottom: 51px;
+    padding-right: 79px;
+  }
+}
+
+.info__list {
+  display: flex;
+  article {
+    text-align: center;
+    font-size: 14px;
+    padding-top: 28px;
+    img {
+      display: block;
+      margin: 0 auto 13px;
+    }
+    a {
+      display: block;
+      color: white;
+      padding: 0 34px;
+      text-align: center;
+    }
+  }
+}
+
