@@ -69,12 +69,15 @@
             </ul>
 
           </nav>
-          <input type="search">
+          <form class="header__search-form">
+            <input type="search" class="header__search" placeholder="Поиск по сайту">
+            <input type="button" class="header__search-but" value="">
+          </form>
         </div>
       </div>
     </div>
   </header>
-  <div class="slider">
+  <section class="slider">
     <div class="slide">
       <div class="sl-wrap">
         <p class="galleries__description">dgdfgdfg</p>
@@ -82,8 +85,117 @@
     </div>
     <div class="slide"></div>
     <div class="slide"></div>
-</div>
-
+  </section>
+  <section class="services">
+    <div class="container">
+      <div class="services__wrap">
+        <a href="#" class="services__item">
+          <img src="img/registration.png" alt="image">
+          <h3>Запись к врачу</h3>
+          <p>Имеются противопоказания.
+            Необходима консультация специалиста</p>
+        </a>
+        <a href="#" class="services__item">
+          <img src="img/call.png" alt="image">
+          <h3>Вызов врача на дом</h3>
+          <p>Имеются противопоказания.
+            Необходима консультация специалиста</p>
+        </a>
+        <a href="#" class="services__item">
+          <img src="img/insurance.png" alt="image">
+          <h3 id="services_title">ОМС</h3>
+          <p>Имеются противопоказания.
+            Необходима консультация специалиста</p>
+        </a>
+        <a href="#" class="services__item">
+          <img src="img/personal.png" alt="image">
+          <h3>Личный кабинет</h3>
+          <p>Имеются противопоказания.
+            Необходима консультация специалиста</p>
+        </a>
+      </div>
+    </div>
+  </section>
+  <section class="slider2">
+    <div class="slide2">
+      <div class="sl-wrap">
+        <p class="galleries__description">dgdfgdfg</p>
+      </div>
+    </div>
+    <div class="slide2"></div>
+    <div class="slide2"></div>
+  </section>
+  <section class="offices">
+    <div class="container">
+      <h2 class="offices__title">Наши отделения</h2>
+      <form class="offices__form">
+        <div class="offices__form-wrap">
+          <div class="offices__switch">
+            <input type="checkbox">
+            <label><i></i></label>
+          </div>
+          <p>ул. Большакова, д. 68</p>
+        </div>
+        <div class="offices__form-wrap">
+          <div class="offices__switch">
+            <input type="checkbox">
+            <label><i></i></label>
+          </div>
+          <p>ул. Викулова, д. 33, корп. 2</p>
+        </div>
+        <div class="offices__form-wrap">
+          <div class="offices__switch">
+            <input type="checkbox">
+            <label><i></i></label>
+          </div>
+          <p>Все отделения</p>
+        </div>
+        <div class="offices__search-form">
+          <input type="search" class="offices__search" placeholder="Найти специалиста">
+          <input type="button" class="offices__search-but" value="">
+        </div>
+      </form>
+      <div class="offices__items">
+        <a class="offices__item" href="#">
+          <h3>Аллергология -
+            иммунология</h3>
+          <p>Первичня консультация
+            Повторная консультация</p>
+          <span class="offices__but">Подробнее</span>
+        </a>
+        <a class="offices__item" href="#">
+          <h3>Анестезиология и реаниматология</h3>
+          <p>Первичня консультация
+            Повторная консультация</p>
+          <span class="offices__but">Подробнее</span>
+        </a>
+        <a class="offices__item" href="#">
+          <h3 id="office__title3">Гастроэнтерология</h3>
+          <p>Первичня консультация
+            Повторная консультация</p>
+          <span class="offices__but">Подробнее</span>
+        </a>
+        <a class="offices__item" href="#">
+          <h3>Кардиология</h3>
+          <p>Первичня консультация
+            Повторная консультация</p>
+          <span class="offices__but">Подробнее</span>
+        </a>
+        <a class="offices__item" href="#">
+          <h3>Колопроктология</h3>
+          <p>Первичня консультация
+            Повторная консультация</p>
+          <span class="offices__but">Подробнее</span>
+        </a>
+        <a class="offices__item" href="#">
+          <h3>Лаборатория</h3>
+          <p>Первичня консультация
+            Повторная консультация</p>
+          <span class="offices__but">Подробнее</span>
+        </a>
+      </div>
+    </div>
+  </section>
   <script src="js/libs.min.js"></script>
   <script src="js/common.js"></script>
 </body>

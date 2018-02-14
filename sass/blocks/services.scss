@@ -1,0 +1,36 @@
+.services {
+  margin-top: 58px;
+  margin-bottom: 59px;
+}
+
+.services__wrap {
+  display: flex;
+  justify-content: space-between;
+}
+
+.services__item {
+  width: 280px;
+  height: 209px;
+  border-radius: 13px;
+  background: linear-gradient(to top, #1b8bb3, #38bbec);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 27px;
+  text-align: center;
+  color: white;
+  h3 {
+    font-size: 22px;
+    margin-bottom: 0;
+    border-bottom: 1px solid white;
+  }
+  p {
+    font-size: 16px;
+    margin-bottom: 0;
+  }
+}
+
+#services_title {
+  margin-top: 10px;
+}
+

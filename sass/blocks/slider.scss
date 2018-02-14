@@ -18,13 +18,25 @@
   left: 0;
   opacity: 0;
   margin: 0;
-  z-index: 1;
+  z-index: 10;
   text-align: center;
   color: black;
   font-size: 16px;
 }
 
 .slide:hover .galleries__description{
+  bottom: 140px;
+  opacity: 1;
+  left: 0;
+}
+
+.slide2 {
+  background: url(../img/slide21.jpg) no-repeat center / cover;
+  height: 310px;
+  position: relative;
+}
+
+.slide2:hover .galleries__description{
   bottom: 140px;
   opacity: 1;
   left: 0;
