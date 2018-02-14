@@ -1,14 +1,31 @@
 .slide {
-  background: url(../img/slide1.jpg) no-repeat;
-  height: 300px;
-
+  background: url(../img/slide1.jpg) no-repeat center / cover;
+  height: 500px;
+  position: relative;
 }
 
-.slider-wrap {
+.sl-wrap {
   width: 1179px;
   margin: 0 auto;
 
-  p {
-    padding-top: 100px;
-  }
+}
+
+.galleries__description {
+  width: 100%;
+  position: absolute;
+  transition: opacity .2s, bottom .7s;
+  bottom: 100px;
+  left: 0;
+  opacity: 0;
+  margin: 0;
+  z-index: 1;
+  text-align: center;
+  color: black;
+  font-size: 16px;
+}
+
+.slide:hover .galleries__description{
+  bottom: 140px;
+  opacity: 1;
+  left: 0;
 }

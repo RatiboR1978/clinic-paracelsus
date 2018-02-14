@@ -1,28 +1,30 @@
 body {
   position: relative;
-  font-family: quattrocento_sansregular, Arial, sans-serif;
-  font-size: 14px;
+  font-family: roboto, Arial, sans-serif;
+  font-size: 19px;
 }
 
 a {
   text-decoration: none;
 }
 
-
-
 img {
   max-width: 100%;
   height: auto;
 }
 
-
-  .clearfix:after {
+.clearfix:after {
   content: "";
   display: table;
   clear: both;
 }
 
-  .wrap {
+.container {
+  width: 1179px;
+  margin: 0 auto;
+}
+
+.wrap {
     display: flex;
     justify-content: center;
-  }
+}
