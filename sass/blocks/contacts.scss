@@ -26,7 +26,21 @@
 }
 
 .but {
-  padding: 10px 42px;
+  padding: 10px 43px;
+  border-radius: 3px;
+  display: block;
+  color: white;
+  font-family: robotobold, Arial, sans-serif;
+  font-size: 14.4px;
+  text-transform: uppercase;
+  border: none;
+  background-color: #50b09b;
+  cursor: pointer;
+  text-align: center;
+}
+
+.but2 {
+  padding: 10px 22px;
   border-radius: 3px;
   display: block;
   color: white;

@@ -227,15 +227,16 @@
   padding-left: 26px;
   transition-property: background-color;
   transition-duration: .5s;
+  background: linear-gradient(to bottom, #ffffff, #f2f2f3);
 }
 
 .header__nav-item:hover {
-  background-color: #50b09b;
+  background: #50b09b;
   color: white;
 }
 
 .header__nav-item--active {
-  background-color: #50b09b;
+  background: #50b09b;
   color: white;
 }
 
@@ -283,10 +284,6 @@
   padding-left: 18px;
   color: #4c4c4c;
   outline: none;
-  transition-duration: .5s;
-}
-
-.header__search:hover {
   box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
