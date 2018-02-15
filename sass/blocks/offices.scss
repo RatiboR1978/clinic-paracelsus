@@ -125,6 +125,17 @@
   margin-bottom: 21px;
 }
 
+.offices__items-show,
+.offices__items-hidden {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+
+.offices__items-hidden--active {
+
+}
+
 .offices__item {
   position: relative;
   width: 283px;
@@ -294,6 +305,10 @@
   background-color: #00aeef;
   cursor: pointer;
   margin-bottom: 65px;
+}
+
+.green {
+  background-color: #50b09b;
 }
 
 .effect {

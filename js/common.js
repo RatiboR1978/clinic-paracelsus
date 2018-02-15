@@ -41,6 +41,24 @@ $(function () {
         $('body,html').animate({scrollTop:0},800);
     });
 
+    var green = $('.green'),
+        officesItems = $('.offices__items-hidden');
+
+    officesItems.hide();
+    green.hide();
+
+    $('.offices__button').on('click', function () {
+        officesItems.slideDown("slow");
+        $('.green').show(300);
+        $(this).hide();
+    });
+
+    green.on('click', function () {
+        officesItems.slideUp("slow");
+        $('.offices__button').show(300);
+        $(this).hide();
+    })
+
 
 
 });

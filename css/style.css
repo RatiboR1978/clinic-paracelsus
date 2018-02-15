@@ -1273,6 +1273,20 @@ img {
           justify-content: space-between;
   margin-bottom: 21px; }
 
+.offices__items-show,
+.offices__items-hidden {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  -webkit-box-pack: justify;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+
 .offices__item {
   position: relative;
   width: 283px;
@@ -1436,6 +1450,9 @@ img {
   background-color: #00aeef;
   cursor: pointer;
   margin-bottom: 65px; }
+
+.green {
+  background-color: #50b09b; }
 
 .effect {
   position: relative; }
@@ -1717,8 +1734,22 @@ img {
       color: #50b09b;
       border-bottom: 1px solid; }
 
+.contacts__item-right {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+  -webkit-flex-direction: column;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: end;
+  -webkit-align-items: flex-end;
+      -ms-flex-align: end;
+          align-items: flex-end; }
+
 .but {
-  padding: 10px 43px;
   -webkit-border-radius: 3px;
           border-radius: 3px;
   display: block;
@@ -1731,19 +1762,14 @@ img {
   cursor: pointer;
   text-align: center; }
 
+.but1 {
+  padding: 10px 43px; }
+
 .but2 {
-  padding: 10px 22px;
-  -webkit-border-radius: 3px;
-          border-radius: 3px;
-  display: block;
-  color: white;
-  font-family: robotobold, Arial, sans-serif;
-  font-size: 14.4px;
-  text-transform: uppercase;
-  border: none;
-  background-color: #50b09b;
-  cursor: pointer;
-  text-align: center; }
+  padding: 10px 22px; }
+
+.but3 {
+  padding: 10px 41px; }
 
 .blue {
   background-color: #00aeef; }
