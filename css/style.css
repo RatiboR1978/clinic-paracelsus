@@ -557,10 +557,10 @@ img {
   opacity: 1; }
 
 .slick-prev {
-  left: 175px; }
+  left: 5%; }
 
 .slick-next {
-  right: 175px;
+  right: 5%;
   background-position: -34px 0; }
 
 /* Dots */
@@ -569,7 +569,7 @@ img {
 
 .slick-dots {
   position: absolute;
-  bottom: 45px;
+  bottom: 30px;
   list-style: none;
   display: block;
   text-align: center;
@@ -934,22 +934,22 @@ img {
   background: #50b09b url(../img/searchIcon.png) no-repeat 13px 9px;
   outline: none; }
 
-.slide {
+.slider__slide {
   background: url(../img/slide1.jpg) no-repeat center/cover;
   height: 500px; }
 
-.sl-wrap {
+.slider__wrap {
   width: 1179px;
   margin: 0 auto;
   height: 500px;
   position: relative; }
 
-.galleries__description {
+.slider__description {
   width: 890px;
   position: absolute;
-  -webkit-transition: opacity 1s, bottom .7s;
-  -o-transition: opacity 1s, bottom .7s;
-  transition: opacity 1s, bottom .7s;
+  -webkit-transition: opacity 0.8s ease 1s;
+  -o-transition: opacity 0.8s ease 1s;
+  transition: opacity 0.8s ease 1s;
   top: 100px;
   left: 50px;
   opacity: 0;
@@ -959,7 +959,7 @@ img {
   font-size: 48px;
   font-family: robotoblack, Arial, sans-serif; }
 
-.galleries__description-active {
+.slick-active .slider__description {
   opacity: 1; }
 
 .slide2 {
@@ -967,8 +967,100 @@ img {
   height: 310px;
   position: relative; }
 
-.slide2:hover .galleries__description {
-  bottom: 140px;
+.slider__price {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: robotobold, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  width: 262px;
+  height: 50px;
+  position: absolute;
+  top: 250px;
+  left: -50px;
+  z-index: 10;
+  background-image: url(../img/figure.png);
+  opacity: 0;
+  -webkit-transition-property: opacity, left;
+  -o-transition-property: opacity, left;
+  transition-property: opacity, left;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s; }
+
+.slick-active .slider__price {
+  opacity: 1;
+  left: 50px; }
+
+.slider__title {
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+  -webkit-align-items: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  position: absolute;
+  top: 53px;
+  -webkit-transition: opacity 0.8s ease 1s;
+  -o-transition: opacity 0.8s ease 1s;
+  transition: opacity 0.8s ease 1s;
+  opacity: 0; }
+  .slider__title h3 {
+    margin: 0;
+    font-size: 36px;
+    color: #233297;
+    margin-right: 10px; }
+
+.slick-active .slider__title {
+  opacity: 1; }
+
+.slider__text {
+  top: 90px;
+  width: 798px;
+  position: absolute;
+  font-size: 16px;
+  line-height: 32px;
+  color: #4c4c4c;
+  -webkit-transition: opacity 0.8s ease 1.2s;
+  -o-transition: opacity 0.8s ease 1.2s;
+  transition: opacity 0.8s ease 1.2s;
+  opacity: 0; }
+
+.slick-active .slider__text {
+  opacity: 1; }
+
+.slider__but {
+  position: absolute;
+  top: 210px;
+  font-size: 14px;
+  color: white;
+  background-color: #f03720;
+  padding: 10px 10px;
+  opacity: 0;
+  left: -50px;
+  -webkit-transition-property: opacity, left;
+  -o-transition-property: opacity, left;
+  transition-property: opacity, left;
+  -webkit-transition-duration: 1s;
+       -o-transition-duration: 1s;
+          transition-duration: 1s;
+  -webkit-transition-timing-function: ease;
+       -o-transition-timing-function: ease;
+          transition-timing-function: ease;
+  -webkit-transition-delay: 1s;
+       -o-transition-delay: 1s;
+          transition-delay: 1s; }
+
+.slick-active .slider__but {
   opacity: 1;
   left: 0; }
 
@@ -1652,6 +1744,26 @@ img {
   background-color: #f03720;
   margin-bottom: 15px; }
 
+.bt-up {
+  width: 67px;
+  height: 67px;
+  background-image: url(../img/btUp.jpg);
+  border: none;
+  outline: none;
+  position: fixed;
+  bottom: 20px;
+  right: 1%;
+  cursor: pointer;
+  z-index: 999; }
+
+.footer {
+  background-color: #50b09b; }
+
+.footer__text {
+  font-size: 14px;
+  line-height: 15px;
+  color: white; }
+
 .footer__social {
   display: -webkit-box;
   display: -webkit-flex;
@@ -1698,11 +1810,3 @@ img {
 
 .footer__item-img {
   margin-right: 10px; }
-
-.footer {
-  background-color: #50b09b; }
-
-.footer__text {
-  font-size: 14px;
-  line-height: 15px;
-  color: white; }

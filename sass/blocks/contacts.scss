@@ -48,49 +48,15 @@
   margin-bottom: 15px;
 }
 
-.footer__social {
-  display: flex;
-}
-
-.footer__item-text {
-  color: white;
-  font-size: 16px;
-  line-height: 15px;
-  margin-right: 22px;
-}
-
-.footer__item-link {
-  margin-right: 5px;
-}
-
-.footer__block {
-  display: flex;
-  justify-content: space-between;
-}
- 
-.contacts__tel {
-  font-size: 22px;
-  color: #4c4c4c;
-}
-
-.contacts__text {
-  font-size: 16px;
-  color: #4c4c4c;
-  width: 197px;
-  text-align: right;
-}
-
-.footer__text-link {
-  font-size: 14px;
-  line-height: 26px;
-  color: white;
-  border-bottom: 1px solid;
-}
-
-.footer__text-first {
-  padding-top: 14px;
-}
-
-.footer__item-img {
-  margin-right: 10px;
+.bt-up {
+  width: 67px;
+  height: 67px;
+  background-image: url(../img/btUp.jpg);
+  border: none;
+  outline: none;
+  position: fixed;
+  bottom: 20px;
+  right: 1%;
+  cursor: pointer;
+  z-index: 999;
 }

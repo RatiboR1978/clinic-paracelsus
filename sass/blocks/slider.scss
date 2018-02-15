@@ -1,19 +1,19 @@
-.slide {
+.slider__slide {
   background: url(../img/slide1.jpg) no-repeat center / cover;
   height: 500px;
 }
 
-.sl-wrap {
+.slider__wrap {
   width: 1179px;
   margin: 0 auto;
   height: 500px;
   position: relative;
 }
 
-.galleries__description {
+.slider__description {
   width: 890px;
   position: absolute;
-  transition: opacity 1s, bottom .7s;
+  transition: opacity 0.8s ease 1s;
   top: 100px;
   left: 50px;
   opacity: 0;
@@ -24,7 +24,7 @@
   font-family: robotoblack, Arial, sans-serif;
 }
 
-.galleries__description-active{
+.slick-active .slider__description {
   opacity: 1;
 }
 
@@ -34,8 +34,82 @@
   position: relative;
 }
 
-.slide2:hover .galleries__description{
-  bottom: 140px;
+.slider__price {
+  text-transform: uppercase;
+  font-size: 30px;
+  font-family: robotobold, Arial, sans-serif;
+  color: white;
+  text-align: center;
+  line-height: 50px;
+  width: 262px;
+  height: 50px;
+  position: absolute;
+  top: 250px;
+  left: -50px;
+  z-index: 10;
+  background-image: url(../img/figure.png);
+  opacity: 0;
+  transition-property: opacity, left;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 1s;
+}
+
+.slick-active .slider__price {
+  opacity: 1;
+  left: 50px;
+}
+
+.slider__title {
+  display: flex;
+  align-items: baseline;
+  position: absolute;
+  top: 53px;
+  transition: opacity 0.8s ease 1s;
+  opacity: 0;
+  h3 {
+    margin: 0;
+    font-size: 36px;
+    color: #233297;
+    margin-right: 10px;
+  }
+}
+
+.slick-active .slider__title {
+  opacity: 1;
+}
+
+.slider__text {
+  top: 90px;
+  width: 798px;
+  position: absolute;
+  font-size: 16px;
+  line-height: 32px;
+  color: #4c4c4c;
+  transition: opacity 0.8s ease 1.2s;
+  opacity: 0;
+}
+
+.slick-active .slider__text {
+  opacity: 1;
+}
+
+.slider__but {
+  position: absolute;
+  top: 210px;
+  font-size: 14px;
+  color: white;
+  background-color: #f03720;
+  padding: 10px 10px;
+  opacity: 0;
+  left: -50px;
+  transition-property: opacity, left;
+  transition-duration: 1s;
+  transition-timing-function: ease;
+  transition-delay: 1s;
+}
+
+.slick-active .slider__but {
   opacity: 1;
   left: 0;
 }
