@@ -42,6 +42,14 @@
   }
 }
 
+.attendance__item {
+  transition-duration: 1s;
+}
+
+.attendance__item:hover {
+  box-shadow: 5px 5px 45px rgba(0, 0, 0, 0.2);
+}
+
 .attendance__title-item1 {
   padding: 21px 10px;
 }

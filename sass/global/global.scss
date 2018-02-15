@@ -4,6 +4,29 @@ body {
   font-size: 19px;
 }
 
+.breadcrumbs {
+  margin: 0; padding: 0; /* Убираем отступы */
+  color: #a7adb0;
+  font-size: 14px;
+  a {
+    color: #a7adb0;
+    font-size: 14px;
+    border-bottom: 1px solid;
+  }
+}
+.breadcrumbs li {
+  display: inline-block; /* Выстраиваем по горизонтали */
+}
+.breadcrumbs li::before {
+  content: '/'; /* Разделитель */
+  margin-left: 5px; /* Отступ слева */
+  margin-right: 5px; /* Отступ справа */
+  color: #a7adb0; /* Цвет разделителя */
+}
+.breadcrumbs li:first-child::before {
+  content: ''; /* Убираем разделитель для первого пункта */
+}
+
 a {
   text-decoration: none;
 }
@@ -28,5 +51,4 @@ img {
     display: flex;
     justify-content: center;
 }
-
 

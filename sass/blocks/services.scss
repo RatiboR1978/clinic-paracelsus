@@ -4,11 +4,13 @@
 }
 
 .services__wrap {
-  display: flex;
-  justify-content: space-between;
+  height: 236px;
+  position: relative;
 }
 
 .services__item {
+  top: 0;
+  position: absolute;
   width: 280px;
   height: 209px;
   border-radius: 13px;
@@ -19,15 +21,38 @@
   padding-top: 27px;
   text-align: center;
   color: white;
+  transition-property: top,height,padding;
+  transition-duration: .5s;
   h3 {
     font-size: 22px;
     margin-bottom: 0;
     border-bottom: 1px solid white;
   }
   p {
+    width: 250px;
     font-size: 16px;
     margin-bottom: 0;
   }
+}
+
+.services__item2 {
+  left: 300px;
+}
+
+.services__item3 {
+  left: 599px;
+}
+
+.services__item4 {
+  left: 898px;
+}
+
+.services__item:hover {
+  position: relative;
+  top: -20px;
+  height: 230px;
+  padding: 47px 0 0;
+  background: #38bbec;
 }
 
 #services_title {

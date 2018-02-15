@@ -10,6 +10,19 @@
   margin-bottom: 22px;
 }
 
+.offices__title-standards {
+  font-size: 32px;
+  color: #4c4c4c;
+  margin-top: 41px;
+  margin-bottom: 59px;
+}
+
+.offices__text-standards {
+  font-size: 16px;
+  color: #4c4c4c;
+  margin-bottom: 59px;
+}
+
 .offices__form {
   display: flex;
   justify-content: space-between;
@@ -88,9 +101,13 @@
   border: 1px solid #b2b2b2;
   font-size: 16px;
   padding-left: 18px;
-  box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.2);
   color: #4c4c4c;
   outline: none;
+  transition-duration: .5s;
+}
+
+.offices__search:hover {
+  box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.2);
 }
 
 .offices__search-but {
@@ -122,17 +139,15 @@
   padding: 27px 5px 5px 91px;
   color: white;
   margin-bottom: 20px;
-  h3 {
-    margin-top: 7px;
-    width: 197px;
-    font-size: 22px;
-    margin-bottom: 0;
-  }
   p {
     font-size: 16px;
     margin-top: 11px;
-    width: 189px;
+    width: 265px;
   }
+}
+
+.offices__item:hover {
+  background: linear-gradient(to top, #1b8bb3, #38bbec);
 }
 
 .offices__but {
@@ -146,68 +161,126 @@
   margin-bottom: 0;
 }
 
-#office__title3 {
-  margin: 20px 0 17px;
+.office__title1 {
+  margin-top: 7px;
+  width: 202px;
+  font-size: 22px;
+  margin-bottom: 0;
+}
+
+.office__title3 {
+  margin: 20px 0 12px;
+}
+
+.offices__item1:before,
+.offices__item2:before,
+.offices__item3:before,
+.offices__item4:before,
+.offices__item5:before,
+.offices__item6:before,
+.offices__item7:before,
+.offices__item8:before,
+.offices__item9:before,
+.offices__item10:before,
+.offices__item11:before,
+.offices__item12:before,
+.offices__item13:before,
+.offices__item14:before,
+.offices__item15:before {
+  position: absolute;
+  content: "";
+  top: 40px;
+  left: 21px;
 }
 
 .offices__item1:before {
-  position: absolute;
-  content: "";
   width: 54px;
   height: 42px;
   background-image: url(../img/drops.png);
-  top: 40px;
-  left: 21px;
 }
 
 .offices__item2:before {
-  position: absolute;
-  content: "";
   width: 41px;
   height: 42px;
   background-image: url(../img/syringe.png);
-  top: 40px;
-  left: 21px;
 }
 
 .offices__item3:before {
-  position: absolute;
-  content: "";
   width: 42px;
   height: 42px;
   background-image: url(../img/stomach.png);
-  top: 40px;
-  left: 21px;
 }
 
 .offices__item4:before {
-  position: absolute;
-  content: "";
   width: 45px;
   height: 42px;
   background-image: url(../img/heart.png);
-  top: 40px;
-  left: 21px;
 }
 
 .offices__item5:before {
-   position: absolute;
-   content: "";
    width: 42px;
    height: 42px;
    background-image: url(../img/tablet.png);
-   top: 40px;
-   left: 21px;
  }
 
 .offices__item6:before {
-  position: absolute;
-  content: "";
   width: 32px;
   height: 42px;
   background-image: url(../img/microscope.png);
-  top: 40px;
-  left: 21px;
+}
+
+.offices__item7:before {
+  width: 32px;
+  height: 48px;
+  background-image: url(../img/ear.png);
+}
+
+.offices__item8:before {
+  width: 64px;
+  height: 43px;
+  background-image: url(../img/massage.png);
+}
+
+.offices__item9:before {
+  width: 45px;
+  height: 45px;
+  background-image: url(../img/cross.png);
+}
+
+.offices__item10:before {
+  width: 54px;
+  height: 43px;
+  background-image: url(../img/brain.png);
+}
+
+.offices__item11:before {
+  width: 50px;
+  height: 47px;
+  background-image: url(../img/brain2.png);
+}
+
+.offices__item12:before {
+  width: 43px;
+  height: 41px;
+  background-image: url(../img/magnifier.png);
+}
+
+.offices__item13:before {
+  width: 43px;
+  height: 43px;
+  background-image: url(../img/ribs.png);
+}
+
+.offices__item14:before {
+  width: 46px;
+  height: 42px;
+  background-image: url(../img/eye.png);
+}
+
+.offices__item15:before {
+  width: 33px;
+  height: 48px;
+  background-image: url(../img/bear.png);
 }
 
 .offices__button {
@@ -223,6 +296,7 @@
   border: none;
   background-color: #00aeef;
   cursor: pointer;
+  margin-bottom: 65px;
 }
 
 .effect {
@@ -256,4 +330,10 @@
   background: #777;
   box-shadow: 0 -6px 10px rgba(0, 0, 0, .2);
   transform: rotate(-3deg);
+}
+
+.offices__title-green {
+  font-size: 45px;
+  color: #50b09b;
+  line-height: 64px;
 }
