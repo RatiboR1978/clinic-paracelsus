@@ -112,10 +112,10 @@ $(function () {
         officesItem.show();
         officesItems.hide();
         officesButton.show();
-        if(window.location.toString().indexOf('index.html') > 0) {
-            $('body,html').animate({scrollTop:1500},800);
-        } else {
+        if(window.location.toString().indexOf('offices.html') > 0) {
             $('body,html').animate({scrollTop:850},800);
+        } else {
+            $('body,html').animate({scrollTop:1400},800);
         }
         $(this).hide();
         officesInput.prop('checked',false);
