@@ -51,6 +51,10 @@
     height: 100%;
     z-index: 100;
   }
+  input:hover ~ label {
+    background: #e0dfdf;
+    border: 1px solid #909090;
+  }
 }
 
 .offices__switch label {
@@ -61,6 +65,11 @@
   background: white;
   border: 1px solid #cccccc;
   border-radius: 40px;
+}
+
+.offices__switch label:hover {
+  background: #e0dfdf;
+  border: 1px solid #909090;
 }
 
 .offices__switch label i {
@@ -82,6 +91,10 @@
 
 .offices__switch input:checked ~ label {
   background: #50b09b;
+}
+
+.offices__switch input:checked ~ label:hover {
+  background: #489e8b;
 }
 
 .offices__switch input:checked ~ label i {
@@ -116,6 +129,11 @@
   cursor: pointer;
   background: #50b09b url(../img/searchIcon.png) no-repeat 13px 9px;
   outline: none;
+  box-shadow: inset -2px 3px 10px rgba(0, 0, 0, 0.2);
+}
+
+.offices__search-but:active {
+  background-color: #489e8b;
 }
 
 .offices__items {
@@ -163,6 +181,10 @@
   color: #00aeef;
   font-size: 16px;
   margin-bottom: 0;
+}
+
+.offices__but:hover {
+  background-color: #e5e5e5;
 }
 
 .office__title1 {
@@ -298,46 +320,8 @@
   font-size: 14.4px;
   text-transform: uppercase;
   border: none;
-  background-color: #00aeef;
   cursor: pointer;
   margin-bottom: 65px;
-}
-
-.green {
-  background-color: #50b09b;
-}
-
-.effect {
-  position: relative;
-}
-
-.effect:before {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  height: 12px;
-  left: 2px;
-  width: 100%;
-  top: 32%;
-  max-width:150px;
-  background: #777;
-  box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
-  transform: rotate(-3deg);
-}
-
-.effect:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  height: 12px;
-  left: 1px;
-  width: 100%;
-  top: 7px;
-  max-width:220px;
-  background: #777;
-  box-shadow: 0 -6px 10px rgba(0, 0, 0, .2);
-  transform: rotate(-3deg);
 }
 
 .offices__title-green {

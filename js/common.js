@@ -121,6 +121,18 @@ $(function () {
         officesInput.prop('checked',false);
     });
 
+    var infoItemLink = $('.info__item a');
+    infoItemLink.on('mouseover', function () {
+        $(this).siblings("img").css('opacity', 0.7);
+    });
+
+    infoItemLink.on('mouseout', function () {
+        $('.info__item img').css('opacity', 1);
+    });
+
+
+
+
 
 
 

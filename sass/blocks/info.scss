@@ -27,8 +27,11 @@
     a {
       display: block;
       color: white;
-      padding: 0 34px;
+      padding: 0 32px;
       text-align: center;
+    }
+    a:hover {
+      text-decoration: underline;
     }
   }
 }

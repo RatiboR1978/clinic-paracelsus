@@ -23,6 +23,10 @@
   margin-right: 5px;
 }
 
+.footer__item-link:hover {
+  opacity: .7;
+}
+
 .footer__block {
   display: flex;
   justify-content: space-between;
