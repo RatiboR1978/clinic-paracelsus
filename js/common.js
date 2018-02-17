@@ -42,22 +42,85 @@ $(function () {
     });
 
     var green = $('.green'),
+        officesItem = $('.offices__item'),
+        officesButton = $('.offices__button'),
+        officesOffice1 = $('.offices__office1-input'),
+        officesOffice2 = $('.offices__office2-input'),
+        officesOfficeAll = $('.offices__officeAll'),
+        officesInput = $('.offices__switch input'),
         officesItems = $('.offices__items-hidden');
 
     officesItems.hide();
     green.hide();
 
-    $('.offices__button').on('click', function () {
-        officesItems.slideDown("slow");
-        $('.green').show(300);
+    officesOffice1.on("change", function() {
+        if ($(this).prop('checked')) {
+            officesItem.hide();
+            $('.offices__office1').show();
+            officesButton.show(300);
+            green.hide();
+            officesInput.prop('checked',false);
+            $(this).prop("checked", true);
+        } else {
+            officesItem.hide();
+            $('.offices__show').show();
+        }
+    });
+
+    officesOffice2.on("change", function() {
+        if ($(this).prop('checked')) {
+            officesItem.hide();
+            $('.offices__office2').show();
+            officesButton.show(300);
+            green.hide();
+            officesInput.prop('checked',false);
+            $(this).prop("checked", true);
+        } else {
+            officesItem.hide();
+            $('.offices__show').show();
+        }
+    });
+
+    officesOfficeAll.on("change", function() {
+        if ($(this).prop('checked')) {
+            officesItem.show();
+            officesItems.hide();
+            officesInput.prop('checked',false);
+            $(this).prop("checked", true);
+            officesItems.slideDown(1);
+            officesButton.hide();
+            green.show();
+        } else {
+            officesItem.show();
+            officesItems.hide();
+            officesButton.show();
+            green.hide();
+        }
+    });
+
+    officesButton.on('click', function () {
+        officesItem.show();
+        officesItems.hide();
+        officesInput.prop('checked',false);
+        officesItems.slideDown(1);
+        green.show();
         $(this).hide();
+        officesOfficeAll.prop('checked',true);
     });
 
     green.on('click', function () {
-        officesItems.slideUp("slow");
-        $('.offices__button').show(300);
+        officesItem.show();
+        officesItems.hide();
+        officesButton.show();
+        if(window.location.toString().indexOf('index.html') > 0) {
+            $('body,html').animate({scrollTop:1500},800);
+        } else {
+            $('body,html').animate({scrollTop:850},800);
+        }
         $(this).hide();
-    })
+        officesInput.prop('checked',false);
+    });
+
 
 
 

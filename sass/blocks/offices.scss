@@ -125,16 +125,12 @@
   margin-bottom: 21px;
 }
 
-.offices__items-show,
-.offices__items-hidden {
+.offices__items-show {
   display: flex;
   flex-wrap: wrap;
   justify-content: space-between;
 }
 
-.offices__items-hidden--active {
-
-}
 
 .offices__item {
   position: relative;

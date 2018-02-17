@@ -1273,8 +1273,7 @@ img {
           justify-content: space-between;
   margin-bottom: 21px; }
 
-.offices__items-show,
-.offices__items-hidden {
+.offices__items-show {
   display: -webkit-box;
   display: -webkit-flex;
   display: -ms-flexbox;
