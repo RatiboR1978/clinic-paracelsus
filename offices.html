@@ -53,7 +53,7 @@
                     </div>
                 </div>
                 <div class="header__buttons">
-                    <a class="effect red" href="#">Личный кабинет</a>
+                    <a class="effect red" href="#js-login-modal">Личный кабинет</a>
                     <a class="effect blue" href="#">Записаться на прием</a>
                 </div>
             </div>
@@ -294,7 +294,7 @@
                     <a class="contacts__tel" href="tel:+73432720303">+7 (343) 272-03-03</a>
                     <p class="contacts__text">Пн-Сб - с 08:00 до 20:00
                         Вс - с 08:00 до 16:00</p>
-                    <a class="but but3 effect red" href="#">Личный кабинет</a>
+                    <a class="but but3 effect red" href="#js-login-modal">Личный кабинет</a>
                     <a class="but but2 effect blue" href="#">Записаться на прием</a>
                 </div>
             </div>
@@ -324,6 +324,20 @@
             </div>
         </div>
     </footer>
+    <section class="modal-personal" id="js-login-modal">
+        <div class="modal-personal__wrap">
+            <h2>вход в личный кабинет</h2>
+            <input type="text" placeholder="Введите логин">
+            <input type="password" placeholder="Введите пароль">
+            <button class="but effect red modal-personal__but">войти</button>
+            <button class="modal-personal__close"></button>
+            <div class="modal-personal__links">
+                <a href="#" type="submit">Зарегистрироваться</a>
+                <a href="#">Не можете войти?</a>
+            </div>
+        </div>
+    </section>
+    <div class="overlay" id="js-overlay"></div>
     <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
     <script src="js/libs.min.js"></script>
     <script src="js/common.js"></script>

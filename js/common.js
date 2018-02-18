@@ -1,5 +1,8 @@
 $(function () {
 
+    /*Slider
+    ========================*/
+
     $('.slider').slick({
         dots: true,
         infinite: true,
@@ -12,6 +15,9 @@ $(function () {
     });
 
     $('.slider .slide').css('opacity', '1');
+
+    /*Slider2
+    ========================*/
 
     $('.slider2').slick({
         dots: true,
@@ -40,6 +46,9 @@ $(function () {
     $('.bt-up').click(function() {
         $('body,html').animate({scrollTop:0},800);
     });
+
+    /* Input - Offices - Checked
+   ====================================*/
 
     var green = $('.green'),
         officesItem = $('.offices__item'),
@@ -98,6 +107,9 @@ $(function () {
         }
     });
 
+    /* Buttons - offices
+   ====================================*/
+
     officesButton.on('click', function () {
         officesItem.show();
         officesItems.hide();
@@ -121,6 +133,9 @@ $(function () {
         officesInput.prop('checked',false);
     });
 
+    /* Hover-info
+   ====================================*/
+
     var infoItemLink = $('.info__item a');
     infoItemLink.on('mouseover', function () {
         $(this).siblings("img").css('opacity', 0.7);
@@ -130,7 +145,28 @@ $(function () {
         $('.info__item img').css('opacity', 1);
     });
 
+    /* Modals
+   ====================================*/
 
+    $(".red").on("click", function(e) {
+
+        e.preventDefault();
+
+        var currentModal = $(this).attr("href");
+
+        $(currentModal + ", #js-overlay").fadeIn(500);
+        $("body").addClass("open-modal");
+
+    });
+
+
+    $("#js-overlay, .modal-personal__close").on("click", function(e) {
+
+        e.preventDefault();
+        $(".modal-personal, #js-overlay").fadeOut(100);
+        $("body").removeClass("open-modal");
+
+    });
 
 
 
