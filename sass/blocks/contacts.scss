@@ -19,7 +19,7 @@
     a {
       font-size: 16px;
       line-height: 30px;
-      color: #50b09b;
+      color: $accent-color;
       border-bottom: 1px solid;
     }
   }
@@ -35,11 +35,11 @@
   border-radius: 3px;
   display: block;
   color: white;
-  font-family: robotobold, Arial, sans-serif;
+  font-family: CoreSans65, Arial, sans-serif;
   font-size: 14.4px;
   text-transform: uppercase;
   border: none;
-  background-color: #50b09b;
+  background-color: $accent-color;
   cursor: pointer;
   text-align: center;
 }

@@ -25,7 +25,7 @@
     }
     h3 {
       font-size: 18px;
-      color: #50b09b;
+      color: $accent-color;
     }
     p {
       font-size: 16px;
@@ -55,10 +55,10 @@
   border-radius: 3px;
   display: block;
   color: white;
-  font-family: robotobold, Arial, sans-serif;
+  font-family: CoreSans65, Arial, sans-serif;
   font-size: 14.4px;
   text-transform: uppercase;
   border: none;
-  background-color: #50b09b;
+  background-color: $accent-color;
   cursor: pointer;
 }
