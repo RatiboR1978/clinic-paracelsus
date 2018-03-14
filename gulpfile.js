@@ -1,4 +1,4 @@
-let gulp       = require('gulp'), // Подключаем Gulp
+var gulp       = require('gulp'), // Подключаем Gulp
 	sass         = require('gulp-sass'), //Подключаем Sass пакет,
 	browserSync  = require('browser-sync'), // Подключаем Browser Sync
     babel        = require('gulp-babel'),
@@ -79,19 +79,19 @@ gulp.task('img', function() {
 
 gulp.task('build', ['clean', "babel", 'img', 'sass', 'scripts'], function() {
 
-	let buildCss = gulp.src([ // Переносим библиотеки в продакшен
+	var buildCss = gulp.src([ // Переносим библиотеки в продакшен
 		'css/style.css',
 		'css/style.min.css'
 		])
 	.pipe(gulp.dest('dist/css'));
 
-	let buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в продакшен
+	var buildFonts = gulp.src('fonts/**/*') // Переносим шрифты в продакшен
 	.pipe(gulp.dest('dist/fonts'));
 
-	let buildJsLib = gulp.src('js/libs.min.js') // Переносим скрипты библиотеки в продакшен
+	var buildJsLib = gulp.src('js/libs.min.js') // Переносим скрипты библиотеки в продакшен
         .pipe(gulp.dest('dist/js'));
 
-	let buildHtml = gulp.src('*.html') // Переносим HTML в продакшен
+	var buildHtml = gulp.src('*.html') // Переносим HTML в продакшен
 	.pipe(gulp.dest('dist'));
 
 });

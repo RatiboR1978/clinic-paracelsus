@@ -193,7 +193,16 @@
   }
 
   &__buttons-nav {
-    margin-top: 4px;
+    margin-top: 8px;
+    a {
+      padding: 8px 59px;
+      border-radius: 3px;
+      text-align: center;
+      color: white;
+      font-family: CoreSans65, Arial, sans-serif;
+      font-size: 14.4px;
+      text-transform: uppercase;
+    }
   }
 
   &__basket {

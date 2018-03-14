@@ -824,7 +824,16 @@ img {
       font-size: 14.4px;
       text-transform: uppercase; }
   .header__buttons-nav {
-    margin-top: 4px; }
+    margin-top: 8px; }
+    .header__buttons-nav a {
+      padding: 8px 59px;
+      -webkit-border-radius: 3px;
+              border-radius: 3px;
+      text-align: center;
+      color: white;
+      font-family: CoreSans65, Arial, sans-serif;
+      font-size: 14.4px;
+      text-transform: uppercase; }
   .header__basket {
     line-height: .8; }
   .header__nav {
