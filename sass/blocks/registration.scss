@@ -1,0 +1,40 @@
+.registration {
+  height: 729px;
+
+  &__but {
+    margin-top: 26px;
+    padding: 10px 26px;
+  }
+
+  &__wrap {
+    height: 635px;
+  }
+
+  &__title {
+    font-size: 16px;
+    line-height: 45px;
+    color: #4c4c4c;
+  }
+
+  &__name-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input {
+      width: 265px;
+    }
+  }
+
+  &__date-wrap {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    input {
+      width: 265px;
+    }
+  }
+
+  &__input-first {
+    margin-bottom: 15px;
+  }
+}

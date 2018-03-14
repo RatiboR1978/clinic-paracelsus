@@ -148,25 +148,38 @@ $(function () {
     /* Modals
    ====================================*/
 
-    $(".red").on("click", function(e) {
+    $(".personal-area-js, .password-recovery-js, .registration-js, .phone-ring-js").on("click", function(e) {
+        var body = $("body");
 
         e.preventDefault();
+        $(".modal-personal").fadeOut(100);
+        body.removeClass("open-modal");
 
         var currentModal = $(this).attr("href");
 
-        $(currentModal + ", #js-overlay").fadeIn(500);
-        $("body").addClass("open-modal");
+        $(currentModal + ", #overlay-js").fadeIn(500);
+        body.addClass("open-modal");
 
     });
 
 
-    $("#js-overlay, .modal-personal__close").on("click", function(e) {
+    $("#overlay-js, .modal__close").on("click", function(e) {
 
         e.preventDefault();
-        $(".modal-personal, #js-overlay").fadeOut(100);
+        $(".modal-personal, .password-recovery, .phone-ring, .registration, #overlay-js").fadeOut(100);
         $("body").removeClass("open-modal");
 
     });
+
+    /* Search-button
+   ====================================*/
+    $("#header_last").on("click", function (e) {
+        e.preventDefault();
+        $(".header__search-box").toggleClass('header__search-box--active');
+    })
+
+
+
 
 
 
