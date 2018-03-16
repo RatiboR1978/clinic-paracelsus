@@ -148,7 +148,7 @@ $(function () {
     /* Modals
    ====================================*/
 
-    $(".personal-area-js, .password-recovery-js, .registration-js, .phone-ring-js").on("click", function(e) {
+    $(".personal-area-js, .password-recovery-js, .registration-js, .phone-ring-js, .reception-js").on("click", function(e) {
         var body = $("body");
 
         e.preventDefault();
@@ -170,6 +170,31 @@ $(function () {
         $("body").removeClass("open-modal");
 
     });
+
+    $(".select__but").on("click", function (e) {
+        e.preventDefault();
+        var elem = $(this).parent().next();
+        if (elem.hasClass("select__list--active")) {
+            elem.fadeOut(100);
+            elem.removeClass("select__list--active")
+        } else {
+            elem.fadeIn(500);
+            elem.addClass("select__list--active")
+        }
+
+    });
+
+    $("#reception-checkbox-js").on("change", function () {
+        if ($(this).prop('checked')) {
+            $(".reception__admin").show();
+            $(".reception__special").hide()
+        } else {
+            $(".reception__admin").hide();
+            $(".reception__special").show();
+        }
+    });
+
+
 
     /* Search-button
    ====================================*/

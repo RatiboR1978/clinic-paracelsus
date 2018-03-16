@@ -1,11 +1,15 @@
 .select {
-  display: flex;
-  border: 1px solid #b2b2b2;
-  box-shadow: inset 2px 4px 36px rgba(0, 0, 0, 0.2);
-  border-radius: 14px;
-  overflow: hidden;
-  line-height: 38px;
-  color: #9e9e9e;
+  position: relative;
+  &__wrap {
+    display: flex;
+    border: 1px solid #b2b2b2;
+    box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.2);
+    border-radius: 14px;
+    overflow: hidden;
+    line-height: 38px;
+    color: #9e9e9e;
+  }
+
   &__field {
     width: 216px;
     height: 38px;
@@ -16,7 +20,7 @@
   }
 
   &__but {
-    width: 47px;
+    width: 45px;
     height: 38px;
     margin-left: -1px;
     background-color: $accent-color;
@@ -33,6 +37,62 @@
     background-image: url(../img/arrow-down.png);
     top: 14px;
     left: 14px;
+  }
+
+  &__list {
+    display: none;
+    position: absolute;
+    top: 30px;
+    left: 0;
+    ul {
+      overflow-y: scroll;
+      max-height: 283px;
+      font-size: 16px;
+      font-family: CoreSans65, Arial, sans-serif;
+      padding: 0;
+      list-style-type: none;
+      color: #4c4c4c;
+      border: 1px solid #e4e7e6;
+    }
+
+    ul::-webkit-scrollbar {
+      background-color: white;
+      width: 9px;
+    }
+
+    ul::-webkit-scrollbar-thumb {
+      background-color: #e4e7e6;
+    }
+    li {
+      position: relative;
+      height: 71px;
+    }
+  }
+
+  &__item {
+    width: 508px;
+    padding: 10px 45px 10px 30px;
+    line-height: 50px;
+    border-bottom: 1px solid #e4e7e6;
+    border-right: 1px solid #e4e7e6;
+    margin-bottom: -1px;
+    background-color: #fff;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+  }
+
+  &__item:hover {
+    background-color: #f7f7f7;
+    color: $accent-color;
+    box-shadow: 0 15px 22px -8px #c0c0c0;
+    position: absolute;
+    top: 0;
+    z-index: 1;
+  }
+
+  &__list--active {
+    display: block;
   }
 }
 

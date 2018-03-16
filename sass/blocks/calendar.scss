@@ -1,0 +1,86 @@
+.calendar {
+  background-color: #f5f5f5;
+  max-width: 275px;
+  margin-right: 12px;
+  table, th, td {
+    border-style: solid;
+    border-color: #dcdcdc;
+    border-width: 1px;
+    border-collapse: collapse;
+  }
+
+  table {
+    border-radius: 5px;
+    border-spacing: 0;
+  }
+
+  td, th {
+    width: 36px;
+    height: 36px;
+  }
+
+  td {
+    position: relative;
+    cursor: pointer;
+  }
+
+  &__month-day:hover {
+    background-color: $accent-color;
+    color: white;
+    font-size: 14px;
+  }
+
+  &__day {
+    text-align: center;
+    font-size: 14px;
+  }
+
+  &__month {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 14px;
+    p {
+      margin: 0;
+    }
+  }
+
+  &__but {
+    border: none;
+    width: 8px;
+    height: 13px;
+    padding: 0;
+    cursor: pointer;
+  }
+  
+  &__but-l {
+    background: url("../img/arrcalendar.png") no-repeat left;
+  }
+
+  &__but-r {
+    background: url("../img/arrcalendar.png") no-repeat right;
+  }
+
+  &__output {
+    color: #ff0000;
+  }
+
+  &__item {
+    position: absolute;
+    top: 0;
+    left: 5px;
+    font-size: 11px;
+  }
+
+  &__last-month {
+    color: #bebebe;
+  }
+
+  &__engaged {
+    background-color: $accent-color;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    font-family: CoreSans65, Arial, sans-serif;
+  }
+}

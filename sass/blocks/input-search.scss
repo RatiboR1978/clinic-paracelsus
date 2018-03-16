@@ -1,0 +1,22 @@
+.input-search {
+  padding-left: 15px;
+  width: 100%;
+  border-top-left-radius: 14px;
+  border-bottom-left-radius: 14px;
+  border: 1px solid #b2b2b2;
+  height: 40px;
+  box-shadow: inset 3px 3px 10px rgba(0, 0, 0, 0.2);
+  outline: none;
+}
+
+.but-search {
+  width: 49px;
+  border-top-right-radius: 14px;
+  border-bottom-right-radius: 14px;
+  border: 1px solid #b2b2b2;
+  margin-left: -1px;
+  background: #50b09b url(../img/searchIcon.png) no-repeat 13px 9px;
+  box-shadow: inset -2px 3px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  outline: none;
+}
