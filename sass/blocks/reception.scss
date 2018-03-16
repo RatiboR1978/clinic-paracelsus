@@ -84,14 +84,6 @@
     margin-bottom: 30px;
   }
 
-  &__addres1 {
-    padding: 10px 31px;
-  }
-
-  &__addres2 {
-    padding: 10px 7px;
-  }
-
   &__addres--active {
     background-color: $accent-color;
     color: white;
@@ -151,7 +143,6 @@
 
   &__admin-but {
     margin-top: 25px;
-    padding: 10px 68px;
   }
 
   &__admin-name {
@@ -295,8 +286,7 @@
   }
 
   &__payment {
-    margin-left: 366px;
-    padding: 10px 11px;
+    margin-left: 360px;
     margin-top: 20px;
   }
 
@@ -358,14 +348,6 @@
     margin-top: 35px;
     display: flex;
     justify-content: space-between;
-  }
-
-  &__final-sent {
-    padding: 10px 69px;
-  }
-
-  &__final-print {
-    padding: 10px 61px;
   }
 
 }

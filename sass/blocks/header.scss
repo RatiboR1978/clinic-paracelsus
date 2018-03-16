@@ -188,28 +188,6 @@
     display: flex;
     flex-direction: column;
     margin-top: 33px;
-    a {
-      padding: 10px 26px;
-      border-radius: 3px;
-      text-align: center;
-      color: white;
-      font-family: CoreSans65, Arial, sans-serif;
-      font-size: 14.4px;
-      text-transform: uppercase;
-    }
-  }
-
-  &__buttons-nav {
-    margin-top: 8px;
-    a {
-      padding: 8px 59px;
-      border-radius: 3px;
-      text-align: center;
-      color: white;
-      font-family: CoreSans65, Arial, sans-serif;
-      font-size: 14.4px;
-      text-transform: uppercase;
-    }
   }
 
   &__basket {
@@ -326,9 +304,13 @@
   }
 
   &__search-box--active {
-
     display: block;
   }
+
+  &__button-mb {
+    margin-bottom: 22px;
+  }
+
 }
 
 #header_first {
@@ -358,13 +340,4 @@
 #header_last:hover:before {
   background: url("../img/searchIcon2.png") no-repeat;
   background-position: right;
-}
-
-.margin-b {
-  margin-bottom: 26px;
-  background-color: #f03720;
-}
-
-.bt-nav {
-  background-color: $accent-color;
 }

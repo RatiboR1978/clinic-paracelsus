@@ -1,68 +1,42 @@
 .contacts {
   padding-top: 30px;
   margin-bottom: -12px;
-}
 
-.contacts__wrap {
-  display: flex;
-  justify-content: space-between;
-  h3 {
-    margin-top: 0;
-    font-size: 20px;
-    color: #4c4c4c;
-    margin-bottom: 0;
-  }
-  ul {
-    padding: 0;
-    list-style-type: none;
-    margin-top: 0;
-    a {
-      font-size: 16px;
-      line-height: 30px;
-      color: $accent-color;
-      border-bottom: 1px solid;
+  &__wrap {
+    display: flex;
+    justify-content: space-between;
+    h3 {
+      margin-top: 0;
+      font-size: 20px;
+      color: #4c4c4c;
+      margin-bottom: 0;
+    }
+    ul {
+      padding: 0;
+      list-style-type: none;
+      margin-top: 0;
+      a {
+        font-size: 16px;
+        line-height: 30px;
+        color: $accent-color;
+        border-bottom: 1px solid;
+      }
     }
   }
-}
 
-.contacts__item-right {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-end;
-}
-
-.but {
-  border-radius: 3px;
-  display: block;
-  color: white;
-  font-family: CoreSans65, Arial, sans-serif;
-  font-size: 14.4px;
-  text-transform: uppercase;
-  border: none;
-  background-color: $accent-color;
-  cursor: pointer;
-  text-align: center;
-}
-
-.but1 {
-  padding: 10px 43px;
-}
-
-.but2 {
-    padding: 10px 22px;
+  &__item-right {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
   }
 
-.but3 {
-  padding: 10px 43px;
-}
+  &__button-mb {
+    margin-bottom: 20px;
+  }
 
-.blue {
-  background-color: #00aeef;
-}
-
-.red {
-  background-color: #f03720;
-  margin-bottom: 15px;
+  &__button-mt {
+    margin-top: 38px;
+  }
 }
 
 .bt-up {

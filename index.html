@@ -53,8 +53,8 @@
             </div>
           </div>
           <div class="header__buttons">
-            <a class="effect margin-b personal-area-js" href="#login-modal-js">Личный кабинет</a>
-            <a class="effect blue reception-js" href="#reception-js">Записаться на прием</a>
+            <a class="button button__red header__button-mb personal-area-js" href="#login-modal-js">Личный кабинет</a>
+            <a class="button button__blue reception-js" href="#reception-js">Записаться на прием</a>
           </div>
         </div>
         <div class="header__nav">
@@ -71,7 +71,7 @@
           </nav>
           <a class="header__basket" href="#"><img src="img/basket.png" alt="image"></a>
           <div class="header__buttons-nav">
-            <a class="effect bt-nav" href="#">Оплата услуг</a>
+            <a class="button" href="#">Оплата услуг</a>
           </div>
 
           <!--<form class="header__search-form">
@@ -168,7 +168,11 @@
   </section>
   <section class="offices">
     <div class="container">
-      <h2 class="offices__title">Наши отделения</h2>
+      <ul class="breadcrumbs">
+        <li><a href="index.html">Главная</a></li>
+        <li>Отделения</li>
+      </ul>
+      <h2 class="offices__title-green">Отделения нашей клиники</h2>
       <form class="offices__form">
         <div class="offices__form-wrap">
           <div class="offices__switch">
@@ -275,8 +279,14 @@
           <a href="#" class="offices__but">Подробнее</a>
         </article>
       </div>
-      <button class="offices__button blue effect">Смотреть все</button>
-      <button class="offices__button green effect">Все отделения</button>
+      <button class="offices__button button button__blue">Смотреть все</button>
+      <button class="offices__button button green">Все отделения</button>
+      <div class="standards">
+        <h2 class="offices__title-standards">Самые высокие стандарты качества наших услуг</h2>
+        <p class="offices__text-standards">Мы – команда единомышленников, объединенных стремлением дать пациентам новый уровень медицинского сервиса, неравнодушного отношения, сделать доступными новые услуги, формы ранней диагностики и лечения.</p>
+        <p class="offices__text-standards">Врачи медицинской клиники В самом центре Екатеринбурга, в Клинике Парацельс собраны специалисты из лучших медицинских центров, с более чем 10 — летним стажем работы в ДМС. На обычном приеме для Вас работают врачи высшей категории, кандидаты и доктора наук с большим опытом работы, пользующиеся наилучшей репутацией.</p>
+        <p class="offices__text-standards">Все они — удивительные люди, которых все реже можно найти — врачи с чуткими и отзывчивыми сердцами, неравнодушные к каждому больному.</p>
+      </div>
     </div>
   </section>
   <section class="specialists">
@@ -304,7 +314,7 @@
           <h3>Наши врачи</h3>
           <p>“Парацельс” - Многопрофильная Клиника, оказывающая полный спектр медицинских услуг. В нашей клинике работают лучшие врачи нашего города. Мы решим любую задачу комплексно и в срок. Обращайтесь - мы будем рады помочь Вам!
             Для того, чтобы ознакомиться со всеми врачами перейдите в соответствующий раздел.</p>
-          <button class="specialists__button effect">Все специалисты</button>
+          <button class="button">Все специалисты</button>
         </div>
       </div>
     </div>
@@ -472,14 +482,14 @@
             <li><a href="#">Запись на прием</a></li>
             <li><a href="#">Вопросы</a></li>
           </ul>
-          <a class="but but1 effect blue phone-ring-js" href="#phone-ring-js">Перезвоните мне</a>
+          <a class="button button__blue contacts__button-mt phone-ring-js" href="#phone-ring-js">Перезвоните мне</a>
         </div>
         <div class="contacts__item contacts__item-right">
           <a class="contacts__tel" href="tel:+73432720303">+7 (343) 272-03-03</a>
           <p class="contacts__text">Пн-Сб - с 08:00 до 20:00
             Вс - с 08:00 до 16:00</p>
-          <a class="but but3 effect red personal-area-js" href="#login-modal-js">Личный кабинет</a>
-          <a class="but but2 effect blue reception-js" href="#reception-js">Записаться на прием</a>
+          <a class="button button__red contacts__button-mb personal-area-js" href="#login-modal-js">Личный кабинет</a>
+          <a class="button button__blue reception-js" href="#reception-js">Записаться на прием</a>
         </div>
       </div>
       <a class="bt-up"></a>
@@ -513,7 +523,7 @@
       <h2>вход в личный кабинет</h2>
       <input class="modal__input" type="text" placeholder="Введите логин">
       <input class="modal__input" type="password" placeholder="Введите пароль">
-      <button class="but effect red modal__but" type="submit">войти</button>
+      <button class="button button__red modal__but" type="submit">войти</button>
       <button class="modal__close"></button>
       <div class="modal__links">
         <a class="registration-js" href="#registration-js">Зарегистрироваться</a>
@@ -526,7 +536,7 @@
       <h2>восстановление пароля</h2>
       <p class="password-recovery__text">Для получения доступа к личному кабинету введите e-mail, который был указан при регистрации, мы вышлем инструкцию по восстановлению пароля</p>
       <input class="modal__input" type="email" placeholder="Введите Ваш Email">
-      <button class="but effect red modal__but password-recovery__but" type="submit">восстановить пароль</button>
+      <button class="button button__red password-recovery__but" type="submit">восстановить пароль</button>
       <button class="modal__close"></button>
     </div>
   </section>
@@ -535,7 +545,7 @@
       <h2>закажите обратный звонок</h2>
       <input class="modal__input" type="text" placeholder="Введите Ваше имя">
       <input class="modal__input" type="tel" placeholder="Введите номер телефона">
-      <button class="but effect blue modal__but phone-ring__but" type="submit">перезвоните мне</button>
+      <button class="button button__blue" type="submit">перезвоните мне</button>
       <button class="modal__close"></button>
     </div>
   </section>
@@ -587,7 +597,7 @@
         </div>
         <label class="registration__title">Номер телефона для связи</label>
         <input class="modal__input" type="text" placeholder="+7 (123) 45-67-89">
-        <button class="but effect red modal__but registration__but" type="submit">Зарегистрироваться</button>
+        <button class="button button__red registration__but" type="submit">Зарегистрироваться</button>
       </form>
       <button class="modal__close"></button>
     </div>
@@ -615,8 +625,8 @@
     <div class="modal__wrap reception__wrap-main reception__special">
       <p class="reception__main-title">Выберите адрес клиники</p>
       <div class="reception__buttons-address">
-        <button class="but but3 effect gray reception__addres1 reception__addres--active">ул. Большакова, д 68</button>
-        <button class="but but3 effect gray reception__addres2">ул. Викулова, д. 33, КОРП. 2</button>
+        <button class="button button__gray reception__addres--active">ул. Большакова, д 68</button>
+        <button class="button button__gray">ул. Викулова, д. 33, КОРП. 2</button>
       </div>
       <div class="reception__search">
         <input class="input-search" type="search" placeholder="Введите отделение, специалиста или услугу">
@@ -781,8 +791,8 @@
         </div>
       </div>
       <div class="reception__date-buttons">
-        <button class="but but3 effect">Предыдущий шаг</button>
-        <button class="but but3 effect">следующий шаг</button>
+        <button class="button">Предыдущий шаг</button>
+        <button class="button">следующий шаг</button>
       </div>
     </div>
     <div class="modal__wrap reception__wrap-main reception__contacts">
@@ -833,10 +843,10 @@
       </div>
       <div class="reception__contacts-buttons">
         <div class="reception__contacts-buttons-wrap">
-          <button class="but but3 effect">Предыдущий шаг</button>
-          <button class="but but3 effect reception__recording">Записаться</button>
+          <button class="button">Предыдущий шаг</button>
+          <button class="button">Записаться</button>
         </div>
-        <button class="but but3 blue effect reception__payment">Записаться и оплатить</button>
+        <button class="button button__blue reception__payment">Записаться и оплатить</button>
       </div>
       <div class="reception__processing">
         <div class="reception__processing-check">
@@ -850,8 +860,8 @@
       <p class="reception__final-text">Отправить на e-mail:</p>
       <input class="modal__input" type="text" placeholder="Ваш e-mail">
       <div class="reception__final-buttons-wrap">
-        <button class="but but3 effect reception__final-sent">Отправить</button>
-        <button class="but but3 effect reception__final-print">Распечатать</button>
+        <button class="button">Отправить</button>
+        <button class="button">Распечатать</button>
       </div>
     </div>
     <div class="modal__wrap reception__wrap-main reception__admin">
@@ -859,7 +869,7 @@
       <p class="reception__admin-text">Оставьте Ваши контактные данные, администратор свяжется с Вами и запишетна прием к специалисту</p>
       <input class="modal__input reception__admin-name" type="text" placeholder="Введите Ваше имя">
       <input class="modal__input" type="email" placeholder="Введите номер телефона">
-      <button class="but effect modal__but reception__admin-but">Отправить</button>
+      <button class="button reception__admin-but">Отправить</button>
     </div>
   </section>
   <div class="overlay" id="overlay-js"></div>

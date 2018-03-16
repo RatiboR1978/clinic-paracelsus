@@ -27,38 +27,7 @@ body {
   background-color: #00b29b;
 }
 
-.effect {
-  position: relative;
-}
 
-.effect:before {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  bottom: 15px;
-  height: 12px;
-  left: 2px;
-  width: 100%;
-  top: 32%;
-  max-width:150px;
-  background: #777;
-  box-shadow: 0 15px 10px rgba(0, 0, 0, .2);
-  transform: rotate(-3deg);
-}
-
-.effect:after {
-  z-index: -1;
-  position: absolute;
-  content: "";
-  height: 12px;
-  left: 0;
-  width: 100%;
-  top: 7px;
-  max-width:220px;
-  background: #777;
-  box-shadow: 0 -6px 10px rgba(0, 0, 0, .2);
-  transform: rotate(-3deg);
-}
 
 .breadcrumbs li {
   display: inline-block; /* Выстраиваем по горизонтали */
