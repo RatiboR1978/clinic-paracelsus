@@ -150,9 +150,18 @@ $(function () {
 
     $(".personal-area-js, .password-recovery-js, .registration-js, .phone-ring-js, .reception-js").on("click", function(e) {
         var body = $("body");
-
+        var elem = $('.reception__stage-item');
         e.preventDefault();
         $(".modal-personal").fadeOut(100);
+        $('.reception__special').fadeIn(100);
+        $('.reception__choice').fadeOut();
+        $('#choice-list-js').fadeOut();
+        $('.reception__field').html('Выберите услугу специалиста').css('color', '#a79f9f');
+        $('.reception__step1').fadeOut();
+        $('#services-search-js').val('');
+        elem.eq(2).removeClass('reception__stage-item--active');
+        elem.eq(0).addClass('reception__stage-item--active');
+
         body.removeClass("open-modal");
 
         var currentModal = $(this).attr("href");
@@ -187,10 +196,22 @@ $(function () {
     $("#reception-checkbox-js").on("change", function () {
         if ($(this).prop('checked')) {
             $(".reception__admin").show();
-            $(".reception__special").hide()
-        } else {
+            $(".reception__special").hide();
+            $(".reception__date").hide();
+            $(".reception__contacts").hide();
+            $(".reception__final").hide();
+        } else if (!$(this).prop('checked') && num === 1){
             $(".reception__admin").hide();
             $(".reception__special").show();
+        } else if(!$(this).prop('checked') && num === 2) {
+            $(".reception__admin").hide();
+            $(".reception__date").show();
+        } else if(!$(this).prop('checked') && num === 3) {
+            $(".reception__admin").hide();
+            $(".reception__contacts").show();
+        } else if(!$(this).prop('checked') && num === 4) {
+            $(".reception__admin").hide();
+            $(".reception__final").show();
         }
     });
 
@@ -201,14 +222,86 @@ $(function () {
     $("#header_last").on("click", function (e) {
         e.preventDefault();
         $(".header__search-box").toggleClass('header__search-box--active');
+    });
+
+
+
+
+
+    var num = 1;
+
+    $('#services-search-js').on('keydown', function () {
+        var elem = $('#services-price-js');
+        $('.reception__choice').fadeOut();
+        $('#choice-list-js').fadeOut();
+        $('.reception__field').html('Выберите услугу специалиста').css('color', '#a79f9f');
+        $('.reception__step1').fadeOut();
+
+        if($(this).val()) {
+            elem.fadeIn();
+        } else {
+            elem.fadeOut();
+        }
+
+    });
+
+    $('.reception__search-item').on('click', function () {
+        $('#services-price-js').fadeOut();
+        $('.reception__choice').fadeIn();
+        $('#services-search-js').val($('.reception__search-item-text').html())
+    });
+    
+    $('#choice-but-js').on('click', function () {
+        $('#choice-list-js').fadeIn();
+    });
+
+    $('.choice-item-js').on('click',function () {
+        $('.reception__field').html($(this).html()).css('color', 'black');
+        $('#choice-list-js').fadeOut();
+        $('.reception__step1').fadeIn();
+    });
+
+    $('#step1-js').on('click', function () {
+        var elem = $('.reception__stage-item');
+        $('.reception__special').hide();
+        $('.reception__date').show();
+        elem.eq(0).removeClass('reception__stage-item--active');
+        elem.eq(1).addClass('reception__stage-item--active');
+        num = 2;
+    });
+
+    $('#step1-prev-js').on('click', function () {
+        $('.reception__special').show();
+        $('.reception__date').hide();
+        num = 1;
+    });
+
+    $('#step2-js').on('click', function () {
+        var elem = $('.reception__stage-item');
+        $('.reception__date').hide();
+        $('.reception__contacts').show();
+        elem.eq(1).removeClass('reception__stage-item--active');
+        elem.eq(2).addClass('reception__stage-item--active');
+        num = 3;
+    });
+
+    $('#step2-prev-js').on('click', function () {
+        $('.reception__date').show();
+        $('.reception__contacts').hide();
+        num=2;
+    });
+
+    $('#step-final-js').on('click', function () {
+        $('.reception__contacts').hide();
+        $('.reception__final').show();
+        num = 4;
+    });
+
+    $('#send-email-js').on('click', function () {
+        $('#overlay-js').hide();
+        $('#reception-js').hide();
+        $('.reception__final').hide();
     })
-
-
-
-
-
-
-
 
 
 
