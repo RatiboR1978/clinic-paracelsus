@@ -301,6 +301,7 @@ $(function () {
         $('#overlay-js').hide();
         $('#reception-js').hide();
         $('.reception__final').hide();
+        num = 1;
     })
 
 
