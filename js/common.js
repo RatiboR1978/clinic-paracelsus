@@ -173,11 +173,9 @@ $(function () {
 
 
     $("#overlay-js, .modal__close").on("click", function(e) {
-
         e.preventDefault();
         $(".modal-personal, .password-recovery, .phone-ring, .registration, #overlay-js").fadeOut(100);
         $("body").removeClass("open-modal");
-
     });
 
     $(".select__but").on("click", function (e) {
@@ -190,7 +188,6 @@ $(function () {
             elem.fadeIn(500);
             elem.addClass("select__list--active")
         }
-
     });
 
     $("#reception-checkbox-js").on("change", function () {
@@ -215,18 +212,16 @@ $(function () {
         }
     });
 
-
-
     /* Search-button
    ====================================*/
+
     $("#header_last").on("click", function (e) {
         e.preventDefault();
         $(".header__search-box").toggleClass('header__search-box--active');
     });
 
-
-
-
+    /*Personal Area
+    ===================================*/
 
     var num = 1;
 
